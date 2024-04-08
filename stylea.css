@@ -1,0 +1,260 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #63E6BE;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #cbcbcb;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* navbar */
+.navbar :nth-child(6) {
+        border-radius:  2rem;
+        background: burlywood;
+    }
+
+.navbar.scrolled {
+    background: grey;
+    color: black;
+    backdrop-filter: blur(8px);
+}
+
+.nav-item a {
+    font-weight: 600;
+    padding: 0px 25px !important;
+    color: inherit !important;
+    font-size: 13px !important;
+    float: right;
+}
+
+.nav-item a:hover {
+    color: #63E6BE !important;
+    border-radius: 25px;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.navbar-brand {
+    font-size: 22px !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: inherit !important;
+}
+
+#navbar.dark {
+    color: white !important;
+}
+
+.containe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+}
+
+.img-about {
+    aspect-ratio: 1;
+    width: 75%;
+    border-radius: 50px;
+    border:5px solid #63E6BE;
+}
+
+.btn:hover {
+    background-color: #63E6BE !important;
+    transform: scale(1.1);
+}
+
+h4 {
+    text-align: left;
+    font-style: red;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('background.jpg');
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    color: black;
+    font-size:  0.99em;
+}
+
+.left h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    color: #63E6BE;   
+}
+
+.left h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.left p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.5rem;
+}
+
+h7 {
+    font-size: xx-large;
+}
+
+#education {
+    background-color: #F2F2F2;
+}
+
+p2 {
+    color:greenyellow;
+    font-size: large;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* skill section */
+.progress {
+    width: 100%;
+    height: 6px !important;
+    background-color: rgb(104, 104, 104) !important;
+}
+
+.progress-bar {
+    width: 0%;
+    position: relative;
+    height: 100%;
+    background-color: #63E6BE !important;
+    transition: 1s all !important;
+    opacity: 1 !important;
+}
+
+.hp {
+    width: 0% !important;
+    transition: 5s all !important;
+}
+
+/* project section */
+
+h1 {
+    text-align: center;
+}
+
+.car {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    gap: 15px !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    margin-top: 3rem !important;
+}
+
+.cardbody {
+    flex-basis: 30%!important;
+    background: white!important;
+    border-radius: 8px!important;
+}
+
+.cardimg img {
+    width: 100%!important;
+    transition: all 1.2s !important;
+}
+
+.cardimg:hover {
+    scale: 1.2;
+}
+
+#contact,
+#projects,
+{
+    background-color: #F2F2F2;
+}
+
+#hire .btn {
+    width: 160px;
+    height: 60px;
+
+}
+
+#education h2,
+#skills h2,
+#contact h2,
+#hire h2,
+#projects h2,
+{
+    letter-spacing: 3px;
+}
+
+/* darkmode */
+:root {
+    /* darkmode */
+    --bg-primary-dark: #272a2d;
+    --bg-secondary-dark: rgb(46, 46, 48);
+    --text-dark: white;
+    --icon-dark: white;
+    --bg-tertiary: #63E6BE;
+}
+
+/* darkmode class */
+#about.dark,
+#skills.dark,
+#hire.dark,
+#FOOTER.dark {
+    background-color: var(--bg-primary-dark);
+    color: var(--text-dark);
+}
+
+#education.dark2,
+#projects.dark2,
+#contact.dark2 {
+    background-color: var(--bg-secondary-dark);
+    color: var(--text-dark);
+}
+
+/* dark light toggle */
+
+.fa-moon {
+    color: #6e6e6e;
+}
+
+.fa-sun {
+    color: #dedede;
+}
+
+footer {
+    background: #f3c794;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
