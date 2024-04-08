@@ -1,4 +1,4 @@
-//hamburger sign
+
 let btn = document.querySelector('.navbar-toggler');
 let icon = btn.querySelector('.fa-bars');
 
@@ -11,7 +11,7 @@ btn.onclick = function () {
     }
 }
 
-//navbar color
+
 var navbar = document.getElementById('navbar');
 
 document.addEventListener("scroll", () => {
@@ -22,7 +22,7 @@ document.addEventListener("scroll", () => {
     }
 });
 
-//multiple text
+
 const text = document.querySelector(".multiple-text");
 const textLoad = () => {
     setTimeout(() => {
@@ -40,7 +40,7 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 4600);
 
-//skill animation
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -56,7 +56,7 @@ const observer = new IntersectionObserver((entries) => {
 const progressBars = document.querySelectorAll('.progress-bar');
 progressBars.forEach(el => observer.observe(el));
 
-//mode  light dark
+
 var navbar = document.querySelector('#navbar');
 var about = document.querySelector('#about');
 var skills = document.querySelector('#skills');
